@@ -1,0 +1,33 @@
+---
+- name: launch vjb instances
+  become: no
+  hosts: localhost
+  connection: local
+  collections:
+    - openstack.cloud
+  gather_facts: False
+  tasks:
+  - name: Create and launch the vjb-vm-in-wiv
+    os_server:
+#      auth:
+#        auth_url: "https://disw-na-wiv.app.pcd.platform9.com/keystone/v3"
+#        username: "vjailbreak@siemens.com"
+#        password: "kGMGZg0ocC&ea73Yv"
+#        project_name: "service"
+      state: present
+      validate_certs: False
+      name: "vjb-ansible-wiv-001"
+      meta:
+        environment: production
+        application: webserver
+      image: "977255cf-2b39-4092-8b29-e8a78a1a1f40"
+      boot_from_volume: yes
+      volume_size: 300
+      terminate_volume: yes
+      key_name: "vjb-ansible"
+      timeout: 200
+      flavor:   "vjb-optimal-flavor"
+      security_groups: "vjb-ansible"
+      network: "wiv-vm-all-7"
+      userdata: "{{ lookup('file', 'cloud-init.yaml') }}"
+      wait: yes

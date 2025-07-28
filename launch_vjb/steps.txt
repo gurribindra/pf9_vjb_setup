@@ -1,0 +1,22 @@
+#0. Source region rc file
+#1. check for latest image on tenant
+#2. upload image if needed
+#3. check for existing pvt key
+#4. check for ssh public keys in region
+#5. create ssh public key if needed.
+#6. check for cloud-init yaml file
+#7. check config.csv for region,tenant,flavor,security_group,key
+
+
+
+
+
+
+#openstack server create \
+#  --flavor <flavor_name_or_id> \
+#  --network <network_name_or_id> \
+#  --key-name <keypair_name> \
+#  --image <image_name_or_id> \
+#  --security-group <security_group_name_or_id> \
+#  --user-data cloud-init.yaml \
+#  <instance_name>

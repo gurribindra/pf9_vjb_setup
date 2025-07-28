@@ -1,0 +1,22 @@
+---
+- name: Copy file and install jq
+  hosts: all
+  become: yes  # Ensures tasks are run with elevated privileges
+  tasks:
+    # Task 1: Copy file from local to remote
+    - name: Copy file to remote host
+      ansible.builtin.copy:
+        src: /home/pf9admin/gurri/vjb_api/launch_vjb/library/VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz
+  # Replace with your local file path
+        dest: /home/ubuntu/.  # Replace with the desired remote path
+        mode: '0644'  # Optional: Set file permissions
+
+    # Task 2: Install jq on the remote host
+#    - name: update the repository list
+#      apt:
+#        
+    - name: Install jq
+      apt:
+        name: jq
+        state: present
+        update_cache: yes

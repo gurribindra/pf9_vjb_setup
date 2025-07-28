@@ -1,0 +1,55 @@
+#!/bin/bash
+#version 0.1
+#usage source launch_vjb <number>
+#<number> represents the vm number of the vjb in that environment. the number will be consistent across  all regions
+
+
+
+
+var_wiv_network_id="592d78d0-44ff-4824-b435-73fb2c8be0b9"
+var_wiv_vjb_image="977255cf-2b39-4092-8b29-e8a78a1a1f40"
+var_wiv_security_group_id="84a0f407-3887-4617-a35c-fcff3a528208"
+var_wiv_instance_name="vjb-wiv-prod-0.1.15-$1"
+
+
+
+
+
+wiv_flavor_id=vjb-optimal-flavor
+wiv_network_id=$var_wiv_network_id
+wiv_key_name="vjb-ansible"
+wiv_vjb_image=$var_wiv_vjb_image
+wiv_security_group_id=$var_wiv_security_group_id
+wiv_instance_name=$var_wiv_instance_name
+
+
+
+
+
+
+#openstack server create \
+#  --flavor <flavor_name_or_id> \
+#  --network <network_name_or_id> \
+#  --key-name <keypair_name> \
+#  --image <image_name_or_id> \
+#  --security-group <security_group_name_or_id> \
+#  --user-data cloud-init.yaml \
+#  <instance_name>
+
+
+
+
+
+
+
+openstack server create \
+  --flavor $wiv_flavor_id \
+  --network $wiv_network_id \
+  --image $wiv_vjb_image \
+  --user-data cloud-init.yaml \
+  $wiv_instance_name -f json > $var_wiv_instance_name.json
+
+
+
+#  --key-name $wiv_key_name \
+

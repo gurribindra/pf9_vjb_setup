@@ -1,0 +1,7 @@
+#cloud-config
+password: "VMw@re2PCD"
+chpasswd: { expire: False }
+ssh_pwauth: True
+manage_etc_hosts: true
+runcmd:
+- [ 'sh', '-c', 'echo "Hello World" > /tmp/helloworld.txt']
