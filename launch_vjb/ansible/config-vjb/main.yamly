@@ -1,8 +1,23 @@
 ---
 - name: Copy file and install jq
   hosts: all
+  gather_facts: false
   become: yes  # Ensures tasks are run with elevated privileges
   tasks:
+    # Task 0: deal with SSH keys
+    - name: Check known_hosts for {{ inventory_hostname }}
+      local_action: shell ssh-keygen -F {{ inventory_hostname }}
+      register: has_entry_in_known_hosts_file
+      changed_when: false
+      ignore_errors: true
+    - name: Ignore host key for {{ inventory_hostname }} on first run
+      when: has_entry_in_known_hosts_file.rc == 1
+      set_fact:
+        ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+    # Now that we have resolved the issue with the host key
+    # we can "gather facts" without issue
+    - name: Delayed gathering of facts
+      setup:
     # Task 1: Copy file from local to remote
     - name: Copy file to remote host
       ansible.builtin.copy:

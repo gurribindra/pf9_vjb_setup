@@ -12,15 +12,15 @@
   "accessIPv4": "",
   "accessIPv6": "",
   "addresses": {},
-  "adminPass": "oHV3q9oWdDrY",
+  "adminPass": "qyZ66Fj9g8Uo",
   "config_drive": "",
-  "created": "2025-07-28T06:45:38Z",
+  "created": "2025-07-28T06:48:14Z",
   "flavor": "vjb-optimal-flavor (e183e1a4-3f56-4b99-b38b-00909cc2b270)",
   "hostId": "",
-  "id": "39c92d7b-4603-4826-9388-4d52611c9835",
+  "id": "c2e10dc5-0ba9-4bd3-978e-bb02b260a903",
   "image": "vjailbreak-image-0.1.15 (68dec0d6-156c-4d2d-8955-61ab2f98feef)",
   "key_name": "vjb-ansible",
-  "name": "vjb-wiv-vjailbreak-image-0.1.15-010",
+  "name": "vjb-wiv-vjailbreak-image-0.1.15-009",
   "os-extended-volumes:volumes_attached": [],
   "progress": 0,
   "project_id": "81995cd0f22a4f5689114c49a440d391",
@@ -31,6 +31,6 @@
     }
   ],
   "status": "BUILD",
-  "updated": "2025-07-28T06:45:38Z",
+  "updated": "2025-07-28T06:48:13Z",
   "user_id": "b05bc4a2c6aa4b5bac2d9b86b027b79b"
 }
