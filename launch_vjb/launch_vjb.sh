@@ -16,7 +16,8 @@ rm inventory.list
 #identify the region-by
 var_region_id=wiv-qa
 var_image_version=$1
-
+source rc_files/qa-wilsonville.rc
+sleep 5s
 #Get the appropriate flavor id
 var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contains("flavor")) | .ID' | tr -d '"')
 
@@ -98,11 +99,65 @@ fi
 
 
 
+#For Milford-PROD
+#identify the region-by
+var_region_id=mif-prod
+var_image_version=$1
 
+#Get the appropriate flavor id
+var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contains("flavor")) | .ID' | tr -d '"')
 
+#Get the appropriate key id
+var_key_name="vjb-ansible"
 
+#Get the network ID
+var_network_id="5cee640c-e970-46fe-8ace-dd291e38e1cf"
 
+#Get the image id for vjailbreak image as per version
+var_vjb_image=$(openstack image list -f json | jq --arg name "$1" '.[] | select(.Name == $name) | .ID' | tr -d '"')
 
+#Create the instance name
+export vjb_instance_name=$(echo -n  "vjb-$var_region_id-$var_image_version-$2")
+
+#executing the command and storing in appropriate json
+openstack server create \
+--flavor $var_flavor_id \
+--network $var_network_id \
+--image $var_vjb_image \
+--key $var_key_name \
+--user-data cloud-init.yaml $vjb_instance_name -f json > vm-status-files/$vjb_instance_name.json
+
+############ Retrieve important information after deployment 
+export deployed_instance_id=$(cat ./vm-status-files/$vjb_instance_name.json | jq .id | tr -d '"')
+echo "The deployed instance with name $vjb_instance_name has instance id of $deployed_instance_id."
+instance_status=$(cat -v ./vm-status-files/$vjb_instance_name.json | jq .status | tr -d '"')
+
+#instance_status="ERROR"
+echo "The current instance status is $instance_status !"
+until [[ "$instance_status" == "ACTIVE" || "instance_status" == "ERROR" ]]; do
+        sleep 5s
+        instance_status=$(openstack server show $deployed_instance_id -f json |  jq .status | tr -d '"' | tr -d ' ')
+        echo "As of $(date) the server with id $deployed_instance_id is at Status = $instance_status!"
+done
+
+if [ "$instance_status" == "ACTIVE" ]; then
+        instance_address=$(openstack server show $deployed_instance_id -f json | jq .addresses.[].[] | tr -d '"' | tr -d ' ')
+        echo $instance_address >> inventory.list
+        echo "The instance status  is : $instance_status"
+                # Send 10 ping packets and suppress output
+                ping -c 10 "$instance_address" > /dev/null
+                # Check the exit status of the ping command
+                if [ $? -eq 0 ]; then
+                        echo "Host $instance_address is reachable."
+			echo "testing if ssh service is responding after 10 Seconds"
+			sleep 10s
+			nc -z -v -w 15 $instance_address 22
+                else
+                        echo "Host $instance_address is not reachable."
+                fi
+else
+        echo "The instance status is : $instance_status"
+fi
 
 
 
