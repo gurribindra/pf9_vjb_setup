@@ -1,0 +1,10 @@
+export OS_USERNAME=vjailbreak@siemens.com
+export OS_PASSWORD="kGMGZg0ocC&ea73Yv"
+export OS_AUTH_URL=https://disw-na-wiv.app.pcd.platform9.com/keystone/v3
+export OS_AUTH_TYPE=password
+export OS_IDENTITY_API_VERSION=3
+export OS_REGION_NAME=wiv
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=service
+export OS_INTERFACE=public
