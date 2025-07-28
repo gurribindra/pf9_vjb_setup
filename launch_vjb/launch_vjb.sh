@@ -18,6 +18,8 @@ var_region_id=wiv-qa
 var_image_version=$1
 source rc_files/qa-wilsonville.rc
 sleep 5s
+echo "The auth url is $OS_AUTH_URL"
+
 #Get the appropriate flavor id
 var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contains("flavor")) | .ID' | tr -d '"')
 
@@ -103,6 +105,12 @@ fi
 #identify the region-by
 var_region_id=mif-prod
 var_image_version=$1
+source rc_files/mif_prod_service.rc
+sleep 5s
+echo "The auth url is $OS_AUTH_URL"
+
+
+
 
 #Get the appropriate flavor id
 var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contains("flavor")) | .ID' | tr -d '"')
@@ -111,7 +119,7 @@ var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contai
 var_key_name="vjb-ansible"
 
 #Get the network ID
-var_network_id="5cee640c-e970-46fe-8ace-dd291e38e1cf"
+var_network_id="170a9458-3ae0-4d34-9a2d-dfd90aea16f9"
 
 #Get the image id for vjailbreak image as per version
 var_vjb_image=$(openstack image list -f json | jq --arg name "$1" '.[] | select(.Name == $name) | .ID' | tr -d '"')
