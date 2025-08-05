@@ -1,0 +1,5 @@
+Wilsonville QA,wiv-qa,qa-wilsonville.rc,vjb-ansible,7fd8b16a-859d-400a-944e-4afc17adc443
+Milford Prod,mif-prod,mif_prod_service.rc,vjb-ansible,7ced1c2a-617c-4b77-989d-5690a040ce75
+Wilsonville Prod,wiv-prod,wiv_prod_service.rc,vjb-ansible,8283d6ca-1c3a-45af-9c74-8308b381c148
+Shannon Prod,snn-prod,snn_prod_service.rc,vjb-ansible,bcc94244-0957-419a-b6cf-cd5db77849eb
+Pune QA,pune-qa,qa-pune.rc,vjb-ansible,ea37cb8d-3276-4567-a2db-9f2dfaefd400

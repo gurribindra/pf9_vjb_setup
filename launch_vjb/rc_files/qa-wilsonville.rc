@@ -1,5 +1,5 @@
-export OS_USERNAME=gurvinder.bindra.ext@siemens.com
-export OS_PASSWORD="Test1234!"
+export OS_USERNAME=vjailbreak@siemens.com
+export OS_PASSWORD="kGMGZg0ocC&ea73Yv"
 export OS_AUTH_URL=https://disw-qa-wilsonville.app.pcd.platform9.com/keystone/v3
 export OS_AUTH_TYPE=password
 export OS_IDENTITY_API_VERSION=3

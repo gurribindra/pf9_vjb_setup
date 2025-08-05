@@ -1,0 +1,913 @@
+2025/04/25 18:15:47 Connected to vCenter: wv-qa-vc.wv.mentorg.com
+2025/04/25 18:15:48 Connected to OpenStack
+2025/04/25 18:15:48 VCenter Thumbprint: c6:d4:67:f5:6c:74:c8:66:63:66:94:03:cc:e9:58:65:3b:d5:47:f5
+2025/04/25 18:15:48 Running in pod
+2025/04/25 18:15:48 Creating volumes in OpenStack
+2025/04/25 18:15:53 Volumes created successfully
+2025/04/25 18:15:53 CBT Enabled: false
+2025/04/25 18:15:53 CBT is not enabled. Enabling CBT
+2025/04/25 18:15:53 Creating temporary snapshot of the source VM
+2025/04/25 18:15:54 Snapshot created successfully
+Snapshot deleted successfully
+2025/04/25 18:15:54 CBT enabled successfully
+2025/04/25 18:15:54 Starting NBD server
+2025/04/25 18:15:55 Copying disk 0, Completed: 0%
+2025/04/25 18:15:55 Executing nbdkit --exit-with-parent --readonly --foreground --unix=/tmp/nbdkit-3538943130/nbdkit.sock --pidfile=/tmp/nbdkit-3538943130/nbdkit.pid --verbose -D vddk.datapath=0 -D nbdkit.backend.datapath=0 vddk libdir=/home/fedora/vmware-vix-disklib-distrib server=wv-qa-vc.wv.mentorg.com user=ad001\z0053zhf password=[REDACTED] thumbprint=c6:d4:67:f5:6c:74:c8:66:63:66:94:03:cc:e9:58:65:3b:d5:47:f5 compression=fastlz config=/home/fedora/vddk.conf transports=file:nbdssl:nbd vm=moref=vm-41161 snapshot=snapshot-41190 [wv-qa-tin-01] pf9-test-22/pf9-test-22.vmdk 
+2025/04/25 18:15:57 Attaching volumes to VM
+2025/04/25 18:15:57 Waiting for volume attachment
+2025/04/25 18:16:02 /usr/bin/nbdcopy --progress=3 --target-is-zero nbd+unix:///?socket=/tmp/nbdkit-3538943130/nbdkit.sock /dev/vdd
+2025/04/25 18:16:04 Copying disk 0, Completed: 0%
+2025/04/25 18:16:04 Copying disk 0, Completed: 0%
+2025/04/25 18:16:04 Copying disk 0, Completed: 0%
+2025/04/25 18:16:05 Copying disk 0, Completed: 0%
+2025/04/25 18:16:06 Copying disk 0, Completed: 0%
+2025/04/25 18:16:07 Copying disk 0, Completed: 0%
+2025/04/25 18:16:08 Copying disk 0, Completed: 0%
+2025/04/25 18:16:09 Copying disk 0, Completed: 0%
+2025/04/25 18:16:10 Copying disk 0, Completed: 0%
+2025/04/25 18:16:11 Copying disk 0, Completed: 1%
+2025/04/25 18:16:11 Copying disk 0, Completed: 1%
+2025/04/25 18:16:12 Copying disk 0, Completed: 1%
+2025/04/25 18:16:13 Copying disk 0, Completed: 1%
+2025/04/25 18:16:15 Copying disk 0, Completed: 1%
+2025/04/25 18:16:16 Copying disk 0, Completed: 1%
+2025/04/25 18:16:17 Copying disk 0, Completed: 1%
+2025/04/25 18:16:18 Copying disk 0, Completed: 1%
+2025/04/25 18:16:18 Copying disk 0, Completed: 2%
+2025/04/25 18:16:19 Copying disk 0, Completed: 2%
+2025/04/25 18:16:20 Copying disk 0, Completed: 2%
+2025/04/25 18:16:21 Copying disk 0, Completed: 2%
+2025/04/25 18:16:22 Copying disk 0, Completed: 2%
+2025/04/25 18:16:22 Copying disk 0, Completed: 2%
+2025/04/25 18:16:23 Copying disk 0, Completed: 2%
+2025/04/25 18:16:24 Copying disk 0, Completed: 2%
+2025/04/25 18:16:25 Copying disk 0, Completed: 3%
+2025/04/25 18:16:25 Copying disk 0, Completed: 3%
+2025/04/25 18:16:27 Copying disk 0, Completed: 3%
+2025/04/25 18:16:28 Copying disk 0, Completed: 3%
+2025/04/25 18:16:29 Copying disk 0, Completed: 3%
+2025/04/25 18:16:31 Copying disk 0, Completed: 3%
+2025/04/25 18:16:32 Copying disk 0, Completed: 3%
+2025/04/25 18:16:33 Copying disk 0, Completed: 3%
+2025/04/25 18:16:35 Copying disk 0, Completed: 4%
+2025/04/25 18:16:36 Copying disk 0, Completed: 4%
+2025/04/25 18:16:37 Copying disk 0, Completed: 4%
+2025/04/25 18:16:38 Copying disk 0, Completed: 4%
+2025/04/25 18:16:40 Copying disk 0, Completed: 4%
+2025/04/25 18:16:41 Copying disk 0, Completed: 4%
+2025/04/25 18:16:42 Copying disk 0, Completed: 4%
+2025/04/25 18:16:43 Copying disk 0, Completed: 4%
+2025/04/25 18:16:45 Copying disk 0, Completed: 5%
+2025/04/25 18:16:46 Copying disk 0, Completed: 5%
+2025/04/25 18:16:47 Copying disk 0, Completed: 5%
+2025/04/25 18:16:48 Copying disk 0, Completed: 5%
+2025/04/25 18:16:49 Copying disk 0, Completed: 5%
+2025/04/25 18:16:50 Copying disk 0, Completed: 5%
+2025/04/25 18:16:51 Copying disk 0, Completed: 5%
+2025/04/25 18:16:52 Copying disk 0, Completed: 5%
+2025/04/25 18:16:52 Copying disk 0, Completed: 6%
+2025/04/25 18:16:53 Copying disk 0, Completed: 6%
+2025/04/25 18:16:54 Copying disk 0, Completed: 6%
+2025/04/25 18:16:55 Copying disk 0, Completed: 6%
+2025/04/25 18:16:56 Copying disk 0, Completed: 6%
+2025/04/25 18:16:57 Copying disk 0, Completed: 6%
+2025/04/25 18:16:58 Copying disk 0, Completed: 6%
+2025/04/25 18:16:58 Copying disk 0, Completed: 6%
+2025/04/25 18:16:59 Copying disk 0, Completed: 7%
+2025/04/25 18:17:00 Copying disk 0, Completed: 7%
+2025/04/25 18:17:01 Copying disk 0, Completed: 7%
+2025/04/25 18:17:02 Copying disk 0, Completed: 7%
+2025/04/25 18:17:03 Copying disk 0, Completed: 7%
+2025/04/25 18:17:04 Copying disk 0, Completed: 7%
+2025/04/25 18:17:06 Copying disk 0, Completed: 7%
+2025/04/25 18:17:07 Copying disk 0, Completed: 7%
+2025/04/25 18:17:08 Copying disk 0, Completed: 8%
+2025/04/25 18:17:10 Copying disk 0, Completed: 8%
+2025/04/25 18:17:11 Copying disk 0, Completed: 8%
+2025/04/25 18:17:12 Copying disk 0, Completed: 8%
+2025/04/25 18:17:13 Copying disk 0, Completed: 8%
+2025/04/25 18:17:13 Copying disk 0, Completed: 8%
+2025/04/25 18:17:14 Copying disk 0, Completed: 8%
+2025/04/25 18:17:15 Copying disk 0, Completed: 8%
+2025/04/25 18:17:16 Copying disk 0, Completed: 9%
+2025/04/25 18:17:17 Copying disk 0, Completed: 9%
+2025/04/25 18:17:18 Copying disk 0, Completed: 9%
+2025/04/25 18:17:20 Copying disk 0, Completed: 9%
+2025/04/25 18:17:21 Copying disk 0, Completed: 9%
+2025/04/25 18:17:22 Copying disk 0, Completed: 9%
+2025/04/25 18:17:23 Copying disk 0, Completed: 9%
+2025/04/25 18:17:24 Copying disk 0, Completed: 9%
+2025/04/25 18:17:26 Copying disk 0, Completed: 10%
+2025/04/25 18:17:27 Copying disk 0, Completed: 10%
+2025/04/25 18:17:28 Copying disk 0, Completed: 10%
+2025/04/25 18:17:29 Copying disk 0, Completed: 10%
+2025/04/25 18:17:31 Copying disk 0, Completed: 10%
+2025/04/25 18:17:32 Copying disk 0, Completed: 10%
+2025/04/25 18:17:33 Copying disk 0, Completed: 10%
+2025/04/25 18:17:34 Copying disk 0, Completed: 10%
+2025/04/25 18:17:35 Copying disk 0, Completed: 11%
+2025/04/25 18:17:36 Copying disk 0, Completed: 11%
+2025/04/25 18:17:37 Copying disk 0, Completed: 11%
+2025/04/25 18:17:39 Copying disk 0, Completed: 11%
+2025/04/25 18:17:40 Copying disk 0, Completed: 11%
+2025/04/25 18:17:41 Copying disk 0, Completed: 11%
+2025/04/25 18:17:42 Copying disk 0, Completed: 11%
+2025/04/25 18:17:43 Copying disk 0, Completed: 11%
+2025/04/25 18:17:44 Copying disk 0, Completed: 12%
+2025/04/25 18:17:45 Copying disk 0, Completed: 12%
+2025/04/25 18:17:46 Copying disk 0, Completed: 12%
+2025/04/25 18:17:47 Copying disk 0, Completed: 12%
+2025/04/25 18:17:48 Copying disk 0, Completed: 12%
+2025/04/25 18:17:50 Copying disk 0, Completed: 12%
+2025/04/25 18:17:51 Copying disk 0, Completed: 12%
+2025/04/25 18:17:51 Copying disk 0, Completed: 12%
+2025/04/25 18:17:52 Copying disk 0, Completed: 13%
+2025/04/25 18:17:52 Copying disk 0, Completed: 13%
+2025/04/25 18:17:53 Copying disk 0, Completed: 13%
+2025/04/25 18:17:54 Copying disk 0, Completed: 13%
+2025/04/25 18:17:55 Copying disk 0, Completed: 13%
+2025/04/25 18:17:55 Copying disk 0, Completed: 13%
+2025/04/25 18:17:56 Copying disk 0, Completed: 13%
+2025/04/25 18:17:57 Copying disk 0, Completed: 13%
+2025/04/25 18:17:57 Copying disk 0, Completed: 14%
+2025/04/25 18:17:58 Copying disk 0, Completed: 14%
+2025/04/25 18:17:59 Copying disk 0, Completed: 14%
+2025/04/25 18:18:00 Copying disk 0, Completed: 14%
+2025/04/25 18:18:00 Copying disk 0, Completed: 14%
+2025/04/25 18:18:01 Copying disk 0, Completed: 14%
+2025/04/25 18:18:02 Copying disk 0, Completed: 14%
+2025/04/25 18:18:02 Copying disk 0, Completed: 14%
+2025/04/25 18:18:03 Copying disk 0, Completed: 15%
+2025/04/25 18:18:04 Copying disk 0, Completed: 15%
+2025/04/25 18:18:05 Copying disk 0, Completed: 15%
+2025/04/25 18:18:05 Copying disk 0, Completed: 15%
+2025/04/25 18:18:06 Copying disk 0, Completed: 15%
+2025/04/25 18:18:07 Copying disk 0, Completed: 15%
+2025/04/25 18:18:07 Copying disk 0, Completed: 15%
+2025/04/25 18:18:08 Copying disk 0, Completed: 15%
+2025/04/25 18:18:09 Copying disk 0, Completed: 16%
+2025/04/25 18:18:09 Copying disk 0, Completed: 16%
+2025/04/25 18:18:10 Copying disk 0, Completed: 16%
+2025/04/25 18:18:11 Copying disk 0, Completed: 16%
+2025/04/25 18:18:12 Copying disk 0, Completed: 16%
+2025/04/25 18:18:12 Copying disk 0, Completed: 16%
+2025/04/25 18:18:13 Copying disk 0, Completed: 16%
+2025/04/25 18:18:14 Copying disk 0, Completed: 16%
+2025/04/25 18:18:14 Copying disk 0, Completed: 17%
+2025/04/25 18:18:15 Copying disk 0, Completed: 17%
+2025/04/25 18:18:16 Copying disk 0, Completed: 17%
+2025/04/25 18:18:16 Copying disk 0, Completed: 17%
+2025/04/25 18:18:17 Copying disk 0, Completed: 17%
+2025/04/25 18:18:18 Copying disk 0, Completed: 17%
+2025/04/25 18:18:19 Copying disk 0, Completed: 17%
+2025/04/25 18:18:19 Copying disk 0, Completed: 17%
+2025/04/25 18:18:20 Copying disk 0, Completed: 18%
+2025/04/25 18:18:21 Copying disk 0, Completed: 18%
+2025/04/25 18:18:21 Copying disk 0, Completed: 18%
+2025/04/25 18:18:22 Copying disk 0, Completed: 18%
+2025/04/25 18:18:23 Copying disk 0, Completed: 18%
+2025/04/25 18:18:23 Copying disk 0, Completed: 18%
+2025/04/25 18:18:24 Copying disk 0, Completed: 18%
+2025/04/25 18:18:25 Copying disk 0, Completed: 18%
+2025/04/25 18:18:25 Copying disk 0, Completed: 19%
+2025/04/25 18:18:26 Copying disk 0, Completed: 19%
+2025/04/25 18:18:27 Copying disk 0, Completed: 19%
+2025/04/25 18:18:28 Copying disk 0, Completed: 19%
+2025/04/25 18:18:28 Copying disk 0, Completed: 19%
+2025/04/25 18:18:29 Copying disk 0, Completed: 19%
+2025/04/25 18:18:30 Copying disk 0, Completed: 19%
+2025/04/25 18:18:30 Copying disk 0, Completed: 19%
+2025/04/25 18:18:31 Copying disk 0, Completed: 20%
+2025/04/25 18:18:32 Copying disk 0, Completed: 20%
+2025/04/25 18:18:32 Copying disk 0, Completed: 20%
+2025/04/25 18:18:33 Copying disk 0, Completed: 20%
+2025/04/25 18:18:34 Copying disk 0, Completed: 20%
+2025/04/25 18:18:34 Copying disk 0, Completed: 20%
+2025/04/25 18:18:35 Copying disk 0, Completed: 20%
+2025/04/25 18:18:36 Copying disk 0, Completed: 20%
+2025/04/25 18:18:36 Copying disk 0, Completed: 21%
+2025/04/25 18:18:37 Copying disk 0, Completed: 21%
+2025/04/25 18:18:38 Copying disk 0, Completed: 21%
+2025/04/25 18:18:38 Copying disk 0, Completed: 21%
+2025/04/25 18:18:39 Copying disk 0, Completed: 21%
+2025/04/25 18:18:40 Copying disk 0, Completed: 21%
+2025/04/25 18:18:41 Copying disk 0, Completed: 21%
+2025/04/25 18:18:41 Copying disk 0, Completed: 21%
+2025/04/25 18:18:42 Copying disk 0, Completed: 22%
+2025/04/25 18:18:43 Copying disk 0, Completed: 22%
+2025/04/25 18:18:43 Copying disk 0, Completed: 22%
+2025/04/25 18:18:44 Copying disk 0, Completed: 22%
+2025/04/25 18:18:45 Copying disk 0, Completed: 22%
+2025/04/25 18:18:45 Copying disk 0, Completed: 22%
+2025/04/25 18:18:46 Copying disk 0, Completed: 22%
+2025/04/25 18:18:47 Copying disk 0, Completed: 22%
+2025/04/25 18:18:48 Copying disk 0, Completed: 23%
+2025/04/25 18:18:48 Copying disk 0, Completed: 23%
+2025/04/25 18:18:49 Copying disk 0, Completed: 23%
+2025/04/25 18:18:50 Copying disk 0, Completed: 23%
+2025/04/25 18:18:50 Copying disk 0, Completed: 23%
+2025/04/25 18:18:51 Copying disk 0, Completed: 23%
+2025/04/25 18:18:52 Copying disk 0, Completed: 23%
+2025/04/25 18:18:53 Copying disk 0, Completed: 23%
+2025/04/25 18:18:53 Copying disk 0, Completed: 24%
+2025/04/25 18:18:54 Copying disk 0, Completed: 24%
+2025/04/25 18:18:55 Copying disk 0, Completed: 24%
+2025/04/25 18:18:56 Copying disk 0, Completed: 24%
+2025/04/25 18:18:56 Copying disk 0, Completed: 24%
+2025/04/25 18:18:57 Copying disk 0, Completed: 24%
+2025/04/25 18:18:58 Copying disk 0, Completed: 24%
+2025/04/25 18:18:58 Copying disk 0, Completed: 24%
+2025/04/25 18:18:59 Copying disk 0, Completed: 25%
+2025/04/25 18:19:00 Copying disk 0, Completed: 25%
+2025/04/25 18:19:00 Copying disk 0, Completed: 25%
+2025/04/25 18:19:01 Copying disk 0, Completed: 25%
+2025/04/25 18:19:02 Copying disk 0, Completed: 25%
+2025/04/25 18:19:02 Copying disk 0, Completed: 25%
+2025/04/25 18:19:03 Copying disk 0, Completed: 25%
+2025/04/25 18:19:04 Copying disk 0, Completed: 25%
+2025/04/25 18:19:04 Copying disk 0, Completed: 26%
+2025/04/25 18:19:05 Copying disk 0, Completed: 26%
+2025/04/25 18:19:06 Copying disk 0, Completed: 26%
+2025/04/25 18:19:06 Copying disk 0, Completed: 26%
+2025/04/25 18:19:07 Copying disk 0, Completed: 26%
+2025/04/25 18:19:08 Copying disk 0, Completed: 26%
+2025/04/25 18:19:08 Copying disk 0, Completed: 26%
+2025/04/25 18:19:09 Copying disk 0, Completed: 26%
+2025/04/25 18:19:10 Copying disk 0, Completed: 27%
+2025/04/25 18:19:10 Copying disk 0, Completed: 27%
+2025/04/25 18:19:11 Copying disk 0, Completed: 27%
+2025/04/25 18:19:12 Copying disk 0, Completed: 27%
+2025/04/25 18:19:12 Copying disk 0, Completed: 27%
+2025/04/25 18:19:13 Copying disk 0, Completed: 27%
+2025/04/25 18:19:14 Copying disk 0, Completed: 27%
+2025/04/25 18:19:14 Copying disk 0, Completed: 27%
+2025/04/25 18:19:15 Copying disk 0, Completed: 28%
+2025/04/25 18:19:16 Copying disk 0, Completed: 28%
+2025/04/25 18:19:16 Copying disk 0, Completed: 28%
+2025/04/25 18:19:17 Copying disk 0, Completed: 28%
+2025/04/25 18:19:17 Copying disk 0, Completed: 28%
+2025/04/25 18:19:18 Copying disk 0, Completed: 28%
+2025/04/25 18:19:19 Copying disk 0, Completed: 28%
+2025/04/25 18:19:19 Copying disk 0, Completed: 28%
+2025/04/25 18:19:20 Copying disk 0, Completed: 28%
+2025/04/25 18:19:21 Copying disk 0, Completed: 29%
+2025/04/25 18:19:21 Copying disk 0, Completed: 29%
+2025/04/25 18:19:22 Copying disk 0, Completed: 29%
+2025/04/25 18:19:23 Copying disk 0, Completed: 29%
+2025/04/25 18:19:23 Copying disk 0, Completed: 29%
+2025/04/25 18:19:24 Copying disk 0, Completed: 29%
+2025/04/25 18:19:25 Copying disk 0, Completed: 29%
+2025/04/25 18:19:25 Copying disk 0, Completed: 30%
+2025/04/25 18:19:26 Copying disk 0, Completed: 30%
+2025/04/25 18:19:26 Copying disk 0, Completed: 30%
+2025/04/25 18:19:27 Copying disk 0, Completed: 30%
+2025/04/25 18:19:28 Copying disk 0, Completed: 30%
+2025/04/25 18:19:28 Copying disk 0, Completed: 30%
+2025/04/25 18:19:29 Copying disk 0, Completed: 30%
+2025/04/25 18:19:30 Copying disk 0, Completed: 30%
+2025/04/25 18:19:30 Copying disk 0, Completed: 31%
+2025/04/25 18:19:31 Copying disk 0, Completed: 31%
+2025/04/25 18:19:32 Copying disk 0, Completed: 31%
+2025/04/25 18:19:32 Copying disk 0, Completed: 31%
+2025/04/25 18:19:33 Copying disk 0, Completed: 31%
+2025/04/25 18:19:33 Copying disk 0, Completed: 31%
+2025/04/25 18:19:34 Copying disk 0, Completed: 31%
+2025/04/25 18:19:35 Copying disk 0, Completed: 31%
+2025/04/25 18:19:35 Copying disk 0, Completed: 32%
+2025/04/25 18:19:36 Copying disk 0, Completed: 32%
+2025/04/25 18:19:37 Copying disk 0, Completed: 32%
+2025/04/25 18:19:37 Copying disk 0, Completed: 32%
+2025/04/25 18:19:38 Copying disk 0, Completed: 32%
+2025/04/25 18:19:39 Copying disk 0, Completed: 32%
+2025/04/25 18:19:39 Copying disk 0, Completed: 32%
+2025/04/25 18:19:40 Copying disk 0, Completed: 32%
+2025/04/25 18:19:40 Copying disk 0, Completed: 33%
+2025/04/25 18:19:41 Copying disk 0, Completed: 33%
+2025/04/25 18:19:42 Copying disk 0, Completed: 33%
+2025/04/25 18:19:42 Copying disk 0, Completed: 33%
+2025/04/25 18:19:43 Copying disk 0, Completed: 33%
+2025/04/25 18:19:44 Copying disk 0, Completed: 33%
+2025/04/25 18:19:44 Copying disk 0, Completed: 33%
+2025/04/25 18:19:45 Copying disk 0, Completed: 33%
+2025/04/25 18:19:46 Copying disk 0, Completed: 34%
+2025/04/25 18:19:46 Copying disk 0, Completed: 34%
+2025/04/25 18:19:47 Copying disk 0, Completed: 34%
+2025/04/25 18:19:47 Copying disk 0, Completed: 34%
+2025/04/25 18:19:48 Copying disk 0, Completed: 34%
+2025/04/25 18:19:49 Copying disk 0, Completed: 34%
+2025/04/25 18:19:49 Copying disk 0, Completed: 34%
+2025/04/25 18:19:50 Copying disk 0, Completed: 34%
+2025/04/25 18:19:51 Copying disk 0, Completed: 35%
+2025/04/25 18:19:51 Copying disk 0, Completed: 35%
+2025/04/25 18:19:52 Copying disk 0, Completed: 35%
+2025/04/25 18:19:53 Copying disk 0, Completed: 35%
+2025/04/25 18:19:53 Copying disk 0, Completed: 35%
+2025/04/25 18:19:54 Copying disk 0, Completed: 35%
+2025/04/25 18:19:54 Copying disk 0, Completed: 35%
+2025/04/25 18:19:55 Copying disk 0, Completed: 35%
+2025/04/25 18:19:56 Copying disk 0, Completed: 36%
+2025/04/25 18:19:56 Copying disk 0, Completed: 36%
+2025/04/25 18:19:57 Copying disk 0, Completed: 36%
+2025/04/25 18:19:58 Copying disk 0, Completed: 36%
+2025/04/25 18:19:58 Copying disk 0, Completed: 36%
+2025/04/25 18:19:59 Copying disk 0, Completed: 36%
+2025/04/25 18:20:00 Copying disk 0, Completed: 36%
+2025/04/25 18:20:00 Copying disk 0, Completed: 36%
+2025/04/25 18:20:01 Copying disk 0, Completed: 37%
+2025/04/25 18:20:02 Copying disk 0, Completed: 37%
+2025/04/25 18:20:02 Copying disk 0, Completed: 37%
+2025/04/25 18:20:03 Copying disk 0, Completed: 37%
+2025/04/25 18:20:03 Copying disk 0, Completed: 37%
+2025/04/25 18:20:04 Copying disk 0, Completed: 37%
+2025/04/25 18:20:05 Copying disk 0, Completed: 37%
+2025/04/25 18:20:05 Copying disk 0, Completed: 37%
+2025/04/25 18:20:06 Copying disk 0, Completed: 38%
+2025/04/25 18:20:07 Copying disk 0, Completed: 38%
+2025/04/25 18:20:07 Copying disk 0, Completed: 38%
+2025/04/25 18:20:08 Copying disk 0, Completed: 38%
+2025/04/25 18:20:09 Copying disk 0, Completed: 38%
+2025/04/25 18:20:09 Copying disk 0, Completed: 38%
+2025/04/25 18:20:10 Copying disk 0, Completed: 38%
+2025/04/25 18:20:11 Copying disk 0, Completed: 38%
+2025/04/25 18:20:11 Copying disk 0, Completed: 39%
+2025/04/25 18:20:12 Copying disk 0, Completed: 39%
+2025/04/25 18:20:13 Copying disk 0, Completed: 39%
+2025/04/25 18:20:13 Copying disk 0, Completed: 39%
+2025/04/25 18:20:14 Copying disk 0, Completed: 39%
+2025/04/25 18:20:15 Copying disk 0, Completed: 39%
+2025/04/25 18:20:15 Copying disk 0, Completed: 39%
+2025/04/25 18:20:16 Copying disk 0, Completed: 39%
+2025/04/25 18:20:17 Copying disk 0, Completed: 40%
+2025/04/25 18:20:17 Copying disk 0, Completed: 40%
+2025/04/25 18:20:18 Copying disk 0, Completed: 40%
+2025/04/25 18:20:19 Copying disk 0, Completed: 40%
+2025/04/25 18:20:19 Copying disk 0, Completed: 40%
+2025/04/25 18:20:20 Copying disk 0, Completed: 40%
+2025/04/25 18:20:20 Copying disk 0, Completed: 40%
+2025/04/25 18:20:21 Copying disk 0, Completed: 40%
+2025/04/25 18:20:22 Copying disk 0, Completed: 41%
+2025/04/25 18:20:22 Copying disk 0, Completed: 41%
+2025/04/25 18:20:23 Copying disk 0, Completed: 41%
+2025/04/25 18:20:24 Copying disk 0, Completed: 41%
+2025/04/25 18:20:24 Copying disk 0, Completed: 41%
+2025/04/25 18:20:25 Copying disk 0, Completed: 41%
+2025/04/25 18:20:26 Copying disk 0, Completed: 41%
+2025/04/25 18:20:26 Copying disk 0, Completed: 41%
+2025/04/25 18:20:27 Copying disk 0, Completed: 42%
+2025/04/25 18:20:28 Copying disk 0, Completed: 42%
+2025/04/25 18:20:28 Copying disk 0, Completed: 42%
+2025/04/25 18:20:29 Copying disk 0, Completed: 42%
+2025/04/25 18:20:30 Copying disk 0, Completed: 42%
+2025/04/25 18:20:30 Copying disk 0, Completed: 42%
+2025/04/25 18:20:31 Copying disk 0, Completed: 42%
+2025/04/25 18:20:32 Copying disk 0, Completed: 42%
+2025/04/25 18:20:32 Copying disk 0, Completed: 43%
+2025/04/25 18:20:33 Copying disk 0, Completed: 43%
+2025/04/25 18:20:34 Copying disk 0, Completed: 43%
+2025/04/25 18:20:34 Copying disk 0, Completed: 43%
+2025/04/25 18:20:35 Copying disk 0, Completed: 43%
+2025/04/25 18:20:36 Copying disk 0, Completed: 43%
+2025/04/25 18:20:36 Copying disk 0, Completed: 43%
+2025/04/25 18:20:37 Copying disk 0, Completed: 43%
+2025/04/25 18:20:38 Copying disk 0, Completed: 44%
+2025/04/25 18:20:38 Copying disk 0, Completed: 44%
+2025/04/25 18:20:39 Copying disk 0, Completed: 44%
+2025/04/25 18:20:39 Copying disk 0, Completed: 44%
+2025/04/25 18:20:40 Copying disk 0, Completed: 44%
+2025/04/25 18:20:41 Copying disk 0, Completed: 44%
+2025/04/25 18:20:41 Copying disk 0, Completed: 44%
+2025/04/25 18:20:42 Copying disk 0, Completed: 44%
+2025/04/25 18:20:43 Copying disk 0, Completed: 45%
+2025/04/25 18:20:43 Copying disk 0, Completed: 45%
+2025/04/25 18:20:44 Copying disk 0, Completed: 45%
+2025/04/25 18:20:45 Copying disk 0, Completed: 45%
+2025/04/25 18:20:45 Copying disk 0, Completed: 45%
+2025/04/25 18:20:46 Copying disk 0, Completed: 45%
+2025/04/25 18:20:47 Copying disk 0, Completed: 45%
+2025/04/25 18:20:47 Copying disk 0, Completed: 45%
+2025/04/25 18:20:48 Copying disk 0, Completed: 46%
+2025/04/25 18:20:49 Copying disk 0, Completed: 46%
+2025/04/25 18:20:49 Copying disk 0, Completed: 46%
+2025/04/25 18:20:50 Copying disk 0, Completed: 46%
+2025/04/25 18:20:51 Copying disk 0, Completed: 46%
+2025/04/25 18:20:51 Copying disk 0, Completed: 46%
+2025/04/25 18:20:52 Copying disk 0, Completed: 46%
+2025/04/25 18:20:52 Copying disk 0, Completed: 46%
+2025/04/25 18:20:53 Copying disk 0, Completed: 47%
+2025/04/25 18:20:54 Copying disk 0, Completed: 47%
+2025/04/25 18:20:55 Copying disk 0, Completed: 47%
+2025/04/25 18:20:55 Copying disk 0, Completed: 47%
+2025/04/25 18:20:56 Copying disk 0, Completed: 47%
+2025/04/25 18:20:56 Copying disk 0, Completed: 47%
+2025/04/25 18:20:57 Copying disk 0, Completed: 47%
+2025/04/25 18:20:58 Copying disk 0, Completed: 47%
+2025/04/25 18:20:58 Copying disk 0, Completed: 48%
+2025/04/25 18:20:59 Copying disk 0, Completed: 48%
+2025/04/25 18:21:00 Copying disk 0, Completed: 48%
+2025/04/25 18:21:00 Copying disk 0, Completed: 48%
+2025/04/25 18:21:01 Copying disk 0, Completed: 48%
+2025/04/25 18:21:02 Copying disk 0, Completed: 48%
+2025/04/25 18:21:02 Copying disk 0, Completed: 48%
+2025/04/25 18:21:03 Copying disk 0, Completed: 48%
+2025/04/25 18:21:04 Copying disk 0, Completed: 49%
+2025/04/25 18:21:04 Copying disk 0, Completed: 49%
+2025/04/25 18:21:05 Copying disk 0, Completed: 49%
+2025/04/25 18:21:05 Copying disk 0, Completed: 49%
+2025/04/25 18:21:06 Copying disk 0, Completed: 49%
+2025/04/25 18:21:07 Copying disk 0, Completed: 49%
+2025/04/25 18:21:07 Copying disk 0, Completed: 49%
+2025/04/25 18:21:08 Copying disk 0, Completed: 49%
+2025/04/25 18:21:08 Copying disk 0, Completed: 50%
+2025/04/25 18:21:09 Copying disk 0, Completed: 50%
+2025/04/25 18:21:10 Copying disk 0, Completed: 50%
+2025/04/25 18:21:10 Copying disk 0, Completed: 50%
+2025/04/25 18:21:11 Copying disk 0, Completed: 50%
+2025/04/25 18:21:12 Copying disk 0, Completed: 50%
+2025/04/25 18:21:12 Copying disk 0, Completed: 50%
+2025/04/25 18:21:13 Copying disk 0, Completed: 50%
+2025/04/25 18:21:13 Copying disk 0, Completed: 51%
+2025/04/25 18:21:14 Copying disk 0, Completed: 51%
+2025/04/25 18:21:15 Copying disk 0, Completed: 51%
+2025/04/25 18:21:15 Copying disk 0, Completed: 51%
+2025/04/25 18:21:16 Copying disk 0, Completed: 51%
+2025/04/25 18:21:16 Copying disk 0, Completed: 51%
+2025/04/25 18:21:17 Copying disk 0, Completed: 51%
+2025/04/25 18:21:18 Copying disk 0, Completed: 51%
+2025/04/25 18:21:18 Copying disk 0, Completed: 52%
+2025/04/25 18:21:19 Copying disk 0, Completed: 52%
+2025/04/25 18:21:19 Copying disk 0, Completed: 52%
+2025/04/25 18:21:20 Copying disk 0, Completed: 52%
+2025/04/25 18:21:21 Copying disk 0, Completed: 52%
+2025/04/25 18:21:21 Copying disk 0, Completed: 52%
+2025/04/25 18:21:22 Copying disk 0, Completed: 52%
+2025/04/25 18:21:22 Copying disk 0, Completed: 52%
+2025/04/25 18:21:23 Copying disk 0, Completed: 53%
+2025/04/25 18:21:24 Copying disk 0, Completed: 53%
+2025/04/25 18:21:24 Copying disk 0, Completed: 53%
+2025/04/25 18:21:25 Copying disk 0, Completed: 53%
+2025/04/25 18:21:25 Copying disk 0, Completed: 53%
+2025/04/25 18:21:26 Copying disk 0, Completed: 53%
+2025/04/25 18:21:27 Copying disk 0, Completed: 53%
+2025/04/25 18:21:27 Copying disk 0, Completed: 53%
+2025/04/25 18:21:28 Copying disk 0, Completed: 54%
+2025/04/25 18:21:28 Copying disk 0, Completed: 54%
+2025/04/25 18:21:29 Copying disk 0, Completed: 54%
+2025/04/25 18:21:30 Copying disk 0, Completed: 54%
+2025/04/25 18:21:30 Copying disk 0, Completed: 54%
+2025/04/25 18:21:31 Copying disk 0, Completed: 54%
+2025/04/25 18:21:31 Copying disk 0, Completed: 54%
+2025/04/25 18:21:32 Copying disk 0, Completed: 54%
+2025/04/25 18:21:33 Copying disk 0, Completed: 55%
+2025/04/25 18:21:33 Copying disk 0, Completed: 55%
+2025/04/25 18:21:34 Copying disk 0, Completed: 55%
+2025/04/25 18:21:34 Copying disk 0, Completed: 55%
+2025/04/25 18:21:35 Copying disk 0, Completed: 55%
+2025/04/25 18:21:35 Copying disk 0, Completed: 55%
+2025/04/25 18:21:36 Copying disk 0, Completed: 55%
+2025/04/25 18:21:36 Copying disk 0, Completed: 55%
+2025/04/25 18:21:37 Copying disk 0, Completed: 56%
+2025/04/25 18:21:38 Copying disk 0, Completed: 56%
+2025/04/25 18:21:38 Copying disk 0, Completed: 56%
+2025/04/25 18:21:39 Copying disk 0, Completed: 56%
+2025/04/25 18:21:39 Copying disk 0, Completed: 56%
+2025/04/25 18:21:40 Copying disk 0, Completed: 56%
+2025/04/25 18:21:40 Copying disk 0, Completed: 56%
+2025/04/25 18:21:41 Copying disk 0, Completed: 56%
+2025/04/25 18:21:41 Copying disk 0, Completed: 56%
+2025/04/25 18:21:42 Copying disk 0, Completed: 57%
+2025/04/25 18:21:42 Copying disk 0, Completed: 57%
+2025/04/25 18:21:43 Copying disk 0, Completed: 57%
+2025/04/25 18:21:43 Copying disk 0, Completed: 57%
+2025/04/25 18:21:44 Copying disk 0, Completed: 57%
+2025/04/25 18:21:44 Copying disk 0, Completed: 57%
+2025/04/25 18:21:45 Copying disk 0, Completed: 57%
+2025/04/25 18:21:45 Copying disk 0, Completed: 57%
+2025/04/25 18:21:46 Copying disk 0, Completed: 58%
+2025/04/25 18:21:46 Copying disk 0, Completed: 58%
+2025/04/25 18:21:47 Copying disk 0, Completed: 58%
+2025/04/25 18:21:47 Copying disk 0, Completed: 58%
+2025/04/25 18:21:48 Copying disk 0, Completed: 58%
+2025/04/25 18:21:48 Copying disk 0, Completed: 58%
+2025/04/25 18:21:49 Copying disk 0, Completed: 58%
+2025/04/25 18:21:49 Copying disk 0, Completed: 59%
+2025/04/25 18:21:50 Copying disk 0, Completed: 59%
+2025/04/25 18:21:50 Copying disk 0, Completed: 59%
+2025/04/25 18:21:51 Copying disk 0, Completed: 59%
+2025/04/25 18:21:51 Copying disk 0, Completed: 59%
+2025/04/25 18:21:52 Copying disk 0, Completed: 59%
+2025/04/25 18:21:52 Copying disk 0, Completed: 59%
+2025/04/25 18:21:53 Copying disk 0, Completed: 59%
+2025/04/25 18:21:54 Copying disk 0, Completed: 60%
+2025/04/25 18:21:54 Copying disk 0, Completed: 60%
+2025/04/25 18:21:55 Copying disk 0, Completed: 60%
+2025/04/25 18:21:55 Copying disk 0, Completed: 60%
+2025/04/25 18:21:56 Copying disk 0, Completed: 60%
+2025/04/25 18:21:56 Copying disk 0, Completed: 60%
+2025/04/25 18:21:57 Copying disk 0, Completed: 60%
+2025/04/25 18:21:57 Copying disk 0, Completed: 60%
+2025/04/25 18:21:58 Copying disk 0, Completed: 61%
+2025/04/25 18:21:58 Copying disk 0, Completed: 61%
+2025/04/25 18:21:59 Copying disk 0, Completed: 61%
+2025/04/25 18:21:59 Copying disk 0, Completed: 61%
+2025/04/25 18:22:00 Copying disk 0, Completed: 61%
+2025/04/25 18:22:00 Copying disk 0, Completed: 61%
+2025/04/25 18:22:01 Copying disk 0, Completed: 61%
+2025/04/25 18:22:01 Copying disk 0, Completed: 61%
+2025/04/25 18:22:02 Copying disk 0, Completed: 62%
+2025/04/25 18:22:02 Copying disk 0, Completed: 62%
+2025/04/25 18:22:03 Copying disk 0, Completed: 62%
+2025/04/25 18:22:03 Copying disk 0, Completed: 62%
+2025/04/25 18:22:04 Copying disk 0, Completed: 62%
+2025/04/25 18:22:04 Copying disk 0, Completed: 62%
+2025/04/25 18:22:05 Copying disk 0, Completed: 62%
+2025/04/25 18:22:05 Copying disk 0, Completed: 62%
+2025/04/25 18:22:06 Copying disk 0, Completed: 63%
+2025/04/25 18:22:06 Copying disk 0, Completed: 63%
+2025/04/25 18:22:07 Copying disk 0, Completed: 63%
+2025/04/25 18:22:07 Copying disk 0, Completed: 63%
+2025/04/25 18:22:08 Copying disk 0, Completed: 63%
+2025/04/25 18:22:08 Copying disk 0, Completed: 63%
+2025/04/25 18:22:09 Copying disk 0, Completed: 63%
+2025/04/25 18:22:10 Copying disk 0, Completed: 63%
+2025/04/25 18:22:10 Copying disk 0, Completed: 64%
+2025/04/25 18:22:11 Copying disk 0, Completed: 64%
+2025/04/25 18:22:11 Copying disk 0, Completed: 64%
+2025/04/25 18:22:12 Copying disk 0, Completed: 64%
+2025/04/25 18:22:12 Copying disk 0, Completed: 64%
+2025/04/25 18:22:13 Copying disk 0, Completed: 64%
+2025/04/25 18:22:13 Copying disk 0, Completed: 64%
+2025/04/25 18:22:14 Copying disk 0, Completed: 64%
+2025/04/25 18:22:14 Copying disk 0, Completed: 65%
+2025/04/25 18:22:15 Copying disk 0, Completed: 65%
+2025/04/25 18:22:15 Copying disk 0, Completed: 65%
+2025/04/25 18:22:16 Copying disk 0, Completed: 65%
+2025/04/25 18:22:17 Copying disk 0, Completed: 65%
+2025/04/25 18:22:17 Copying disk 0, Completed: 65%
+2025/04/25 18:22:18 Copying disk 0, Completed: 65%
+2025/04/25 18:22:18 Copying disk 0, Completed: 65%
+2025/04/25 18:22:19 Copying disk 0, Completed: 66%
+2025/04/25 18:22:19 Copying disk 0, Completed: 66%
+2025/04/25 18:22:20 Copying disk 0, Completed: 66%
+2025/04/25 18:22:21 Copying disk 0, Completed: 66%
+2025/04/25 18:22:21 Copying disk 0, Completed: 66%
+2025/04/25 18:22:22 Copying disk 0, Completed: 66%
+2025/04/25 18:22:22 Copying disk 0, Completed: 66%
+2025/04/25 18:22:23 Copying disk 0, Completed: 66%
+2025/04/25 18:22:23 Copying disk 0, Completed: 67%
+2025/04/25 18:22:24 Copying disk 0, Completed: 67%
+2025/04/25 18:22:25 Copying disk 0, Completed: 67%
+2025/04/25 18:22:25 Copying disk 0, Completed: 67%
+2025/04/25 18:22:26 Copying disk 0, Completed: 67%
+2025/04/25 18:22:26 Copying disk 0, Completed: 67%
+2025/04/25 18:22:27 Copying disk 0, Completed: 67%
+2025/04/25 18:22:27 Copying disk 0, Completed: 67%
+2025/04/25 18:22:28 Copying disk 0, Completed: 68%
+2025/04/25 18:22:28 Copying disk 0, Completed: 68%
+2025/04/25 18:22:29 Copying disk 0, Completed: 68%
+2025/04/25 18:22:30 Copying disk 0, Completed: 68%
+2025/04/25 18:22:30 Copying disk 0, Completed: 68%
+2025/04/25 18:22:30 Copying disk 0, Completed: 68%
+2025/04/25 18:22:31 Copying disk 0, Completed: 68%
+2025/04/25 18:22:32 Copying disk 0, Completed: 68%
+2025/04/25 18:22:32 Copying disk 0, Completed: 69%
+2025/04/25 18:22:32 Copying disk 0, Completed: 69%
+2025/04/25 18:22:33 Copying disk 0, Completed: 69%
+2025/04/25 18:22:33 Copying disk 0, Completed: 69%
+2025/04/25 18:22:34 Copying disk 0, Completed: 69%
+2025/04/25 18:22:35 Copying disk 0, Completed: 69%
+2025/04/25 18:22:35 Copying disk 0, Completed: 69%
+2025/04/25 18:22:35 Copying disk 0, Completed: 69%
+2025/04/25 18:22:36 Copying disk 0, Completed: 70%
+2025/04/25 18:22:37 Copying disk 0, Completed: 70%
+2025/04/25 18:22:37 Copying disk 0, Completed: 70%
+2025/04/25 18:22:38 Copying disk 0, Completed: 70%
+2025/04/25 18:22:38 Copying disk 0, Completed: 70%
+2025/04/25 18:22:39 Copying disk 0, Completed: 70%
+2025/04/25 18:22:39 Copying disk 0, Completed: 70%
+2025/04/25 18:22:40 Copying disk 0, Completed: 70%
+2025/04/25 18:22:40 Copying disk 0, Completed: 71%
+2025/04/25 18:22:41 Copying disk 0, Completed: 71%
+2025/04/25 18:22:41 Copying disk 0, Completed: 71%
+2025/04/25 18:22:42 Copying disk 0, Completed: 71%
+2025/04/25 18:22:42 Copying disk 0, Completed: 71%
+2025/04/25 18:22:43 Copying disk 0, Completed: 71%
+2025/04/25 18:22:43 Copying disk 0, Completed: 71%
+2025/04/25 18:22:44 Copying disk 0, Completed: 71%
+2025/04/25 18:22:44 Copying disk 0, Completed: 72%
+2025/04/25 18:22:45 Copying disk 0, Completed: 72%
+2025/04/25 18:22:45 Copying disk 0, Completed: 72%
+2025/04/25 18:22:46 Copying disk 0, Completed: 72%
+2025/04/25 18:22:47 Copying disk 0, Completed: 72%
+2025/04/25 18:22:47 Copying disk 0, Completed: 72%
+2025/04/25 18:22:48 Copying disk 0, Completed: 72%
+2025/04/25 18:22:48 Copying disk 0, Completed: 72%
+2025/04/25 18:22:49 Copying disk 0, Completed: 73%
+2025/04/25 18:22:49 Copying disk 0, Completed: 73%
+2025/04/25 18:22:50 Copying disk 0, Completed: 73%
+2025/04/25 18:22:50 Copying disk 0, Completed: 73%
+2025/04/25 18:22:51 Copying disk 0, Completed: 73%
+2025/04/25 18:22:51 Copying disk 0, Completed: 73%
+2025/04/25 18:22:52 Copying disk 0, Completed: 73%
+2025/04/25 18:22:52 Copying disk 0, Completed: 73%
+2025/04/25 18:22:53 Copying disk 0, Completed: 74%
+2025/04/25 18:22:53 Copying disk 0, Completed: 74%
+2025/04/25 18:22:54 Copying disk 0, Completed: 74%
+2025/04/25 18:22:54 Copying disk 0, Completed: 74%
+2025/04/25 18:22:55 Copying disk 0, Completed: 74%
+2025/04/25 18:22:56 Copying disk 0, Completed: 74%
+2025/04/25 18:22:56 Copying disk 0, Completed: 74%
+2025/04/25 18:22:56 Copying disk 0, Completed: 74%
+2025/04/25 18:22:57 Copying disk 0, Completed: 75%
+2025/04/25 18:22:58 Copying disk 0, Completed: 75%
+2025/04/25 18:22:58 Copying disk 0, Completed: 75%
+2025/04/25 18:22:59 Copying disk 0, Completed: 75%
+2025/04/25 18:22:59 Copying disk 0, Completed: 75%
+2025/04/25 18:23:00 Copying disk 0, Completed: 75%
+2025/04/25 18:23:00 Copying disk 0, Completed: 75%
+2025/04/25 18:23:01 Copying disk 0, Completed: 75%
+2025/04/25 18:23:02 Copying disk 0, Completed: 76%
+2025/04/25 18:23:02 Copying disk 0, Completed: 76%
+2025/04/25 18:23:03 Copying disk 0, Completed: 76%
+2025/04/25 18:23:03 Copying disk 0, Completed: 76%
+2025/04/25 18:23:04 Copying disk 0, Completed: 76%
+2025/04/25 18:23:04 Copying disk 0, Completed: 76%
+2025/04/25 18:23:05 Copying disk 0, Completed: 76%
+2025/04/25 18:23:05 Copying disk 0, Completed: 76%
+2025/04/25 18:23:06 Copying disk 0, Completed: 77%
+2025/04/25 18:23:07 Copying disk 0, Completed: 77%
+2025/04/25 18:23:07 Copying disk 0, Completed: 77%
+2025/04/25 18:23:08 Copying disk 0, Completed: 77%
+2025/04/25 18:23:08 Copying disk 0, Completed: 77%
+2025/04/25 18:23:09 Copying disk 0, Completed: 77%
+2025/04/25 18:23:10 Copying disk 0, Completed: 77%
+2025/04/25 18:23:10 Copying disk 0, Completed: 77%
+2025/04/25 18:23:11 Copying disk 0, Completed: 78%
+2025/04/25 18:23:11 Copying disk 0, Completed: 78%
+2025/04/25 18:23:12 Copying disk 0, Completed: 78%
+2025/04/25 18:23:12 Copying disk 0, Completed: 78%
+2025/04/25 18:23:13 Copying disk 0, Completed: 78%
+2025/04/25 18:23:13 Copying disk 0, Completed: 78%
+2025/04/25 18:23:14 Copying disk 0, Completed: 78%
+2025/04/25 18:23:14 Copying disk 0, Completed: 78%
+2025/04/25 18:23:15 Copying disk 0, Completed: 79%
+2025/04/25 18:23:15 Copying disk 0, Completed: 79%
+2025/04/25 18:23:16 Copying disk 0, Completed: 79%
+2025/04/25 18:23:17 Copying disk 0, Completed: 79%
+2025/04/25 18:23:17 Copying disk 0, Completed: 79%
+2025/04/25 18:23:18 Copying disk 0, Completed: 79%
+2025/04/25 18:23:18 Copying disk 0, Completed: 79%
+2025/04/25 18:23:19 Copying disk 0, Completed: 79%
+2025/04/25 18:23:19 Copying disk 0, Completed: 80%
+2025/04/25 18:23:20 Copying disk 0, Completed: 80%
+2025/04/25 18:23:20 Copying disk 0, Completed: 80%
+2025/04/25 18:23:21 Copying disk 0, Completed: 80%
+2025/04/25 18:23:21 Copying disk 0, Completed: 80%
+2025/04/25 18:23:22 Copying disk 0, Completed: 80%
+2025/04/25 18:23:22 Copying disk 0, Completed: 80%
+2025/04/25 18:23:23 Copying disk 0, Completed: 80%
+2025/04/25 18:23:23 Copying disk 0, Completed: 81%
+2025/04/25 18:23:24 Copying disk 0, Completed: 81%
+2025/04/25 18:23:24 Copying disk 0, Completed: 81%
+2025/04/25 18:23:25 Copying disk 0, Completed: 81%
+2025/04/25 18:23:25 Copying disk 0, Completed: 81%
+2025/04/25 18:23:26 Copying disk 0, Completed: 81%
+2025/04/25 18:23:26 Copying disk 0, Completed: 81%
+2025/04/25 18:23:27 Copying disk 0, Completed: 81%
+2025/04/25 18:23:27 Copying disk 0, Completed: 82%
+2025/04/25 18:23:28 Copying disk 0, Completed: 82%
+2025/04/25 18:23:28 Copying disk 0, Completed: 82%
+2025/04/25 18:23:29 Copying disk 0, Completed: 82%
+2025/04/25 18:23:29 Copying disk 0, Completed: 82%
+2025/04/25 18:23:30 Copying disk 0, Completed: 82%
+2025/04/25 18:23:30 Copying disk 0, Completed: 82%
+2025/04/25 18:23:31 Copying disk 0, Completed: 82%
+2025/04/25 18:23:31 Copying disk 0, Completed: 83%
+2025/04/25 18:23:32 Copying disk 0, Completed: 83%
+2025/04/25 18:23:32 Copying disk 0, Completed: 83%
+2025/04/25 18:23:33 Copying disk 0, Completed: 83%
+2025/04/25 18:23:33 Copying disk 0, Completed: 83%
+2025/04/25 18:23:34 Copying disk 0, Completed: 83%
+2025/04/25 18:23:34 Copying disk 0, Completed: 83%
+2025/04/25 18:23:35 Copying disk 0, Completed: 83%
+2025/04/25 18:23:35 Copying disk 0, Completed: 84%
+2025/04/25 18:23:36 Copying disk 0, Completed: 84%
+2025/04/25 18:23:36 Copying disk 0, Completed: 84%
+2025/04/25 18:23:37 Copying disk 0, Completed: 84%
+2025/04/25 18:23:37 Copying disk 0, Completed: 84%
+2025/04/25 18:23:37 Copying disk 0, Completed: 84%
+2025/04/25 18:23:38 Copying disk 0, Completed: 84%
+2025/04/25 18:23:39 Copying disk 0, Completed: 84%
+2025/04/25 18:23:39 Copying disk 0, Completed: 85%
+2025/04/25 18:23:39 Copying disk 0, Completed: 85%
+2025/04/25 18:23:40 Copying disk 0, Completed: 85%
+2025/04/25 18:23:40 Copying disk 0, Completed: 85%
+2025/04/25 18:23:41 Copying disk 0, Completed: 85%
+2025/04/25 18:23:41 Copying disk 0, Completed: 85%
+2025/04/25 18:23:42 Copying disk 0, Completed: 85%
+2025/04/25 18:23:42 Copying disk 0, Completed: 85%
+2025/04/25 18:23:43 Copying disk 0, Completed: 86%
+2025/04/25 18:23:43 Copying disk 0, Completed: 86%
+2025/04/25 18:23:44 Copying disk 0, Completed: 86%
+2025/04/25 18:23:44 Copying disk 0, Completed: 86%
+2025/04/25 18:23:45 Copying disk 0, Completed: 86%
+2025/04/25 18:23:45 Copying disk 0, Completed: 86%
+2025/04/25 18:23:46 Copying disk 0, Completed: 86%
+2025/04/25 18:23:46 Copying disk 0, Completed: 86%
+2025/04/25 18:23:47 Copying disk 0, Completed: 87%
+2025/04/25 18:23:47 Copying disk 0, Completed: 87%
+2025/04/25 18:23:48 Copying disk 0, Completed: 87%
+2025/04/25 18:23:48 Copying disk 0, Completed: 87%
+2025/04/25 18:23:49 Copying disk 0, Completed: 87%
+2025/04/25 18:23:49 Copying disk 0, Completed: 87%
+2025/04/25 18:23:50 Copying disk 0, Completed: 87%
+2025/04/25 18:23:50 Copying disk 0, Completed: 87%
+2025/04/25 18:23:51 Copying disk 0, Completed: 88%
+2025/04/25 18:23:51 Copying disk 0, Completed: 88%
+2025/04/25 18:23:52 Copying disk 0, Completed: 88%
+2025/04/25 18:23:52 Copying disk 0, Completed: 88%
+2025/04/25 18:23:53 Copying disk 0, Completed: 88%
+2025/04/25 18:23:53 Copying disk 0, Completed: 88%
+2025/04/25 18:23:54 Copying disk 0, Completed: 88%
+2025/04/25 18:23:54 Copying disk 0, Completed: 88%
+2025/04/25 18:23:55 Copying disk 0, Completed: 89%
+2025/04/25 18:23:55 Copying disk 0, Completed: 89%
+2025/04/25 18:23:56 Copying disk 0, Completed: 89%
+2025/04/25 18:23:56 Copying disk 0, Completed: 89%
+2025/04/25 18:23:57 Copying disk 0, Completed: 89%
+2025/04/25 18:23:57 Copying disk 0, Completed: 89%
+2025/04/25 18:23:58 Copying disk 0, Completed: 89%
+2025/04/25 18:23:58 Copying disk 0, Completed: 89%
+2025/04/25 18:23:59 Copying disk 0, Completed: 90%
+2025/04/25 18:23:59 Copying disk 0, Completed: 90%
+2025/04/25 18:24:00 Copying disk 0, Completed: 90%
+2025/04/25 18:24:00 Copying disk 0, Completed: 90%
+2025/04/25 18:24:01 Copying disk 0, Completed: 90%
+2025/04/25 18:24:01 Copying disk 0, Completed: 90%
+2025/04/25 18:24:02 Copying disk 0, Completed: 90%
+2025/04/25 18:24:02 Copying disk 0, Completed: 90%
+2025/04/25 18:24:03 Copying disk 0, Completed: 91%
+2025/04/25 18:24:03 Copying disk 0, Completed: 91%
+2025/04/25 18:24:04 Copying disk 0, Completed: 91%
+2025/04/25 18:24:04 Copying disk 0, Completed: 91%
+2025/04/25 18:24:05 Copying disk 0, Completed: 91%
+2025/04/25 18:24:05 Copying disk 0, Completed: 91%
+2025/04/25 18:24:06 Copying disk 0, Completed: 91%
+2025/04/25 18:24:06 Copying disk 0, Completed: 91%
+2025/04/25 18:24:07 Copying disk 0, Completed: 92%
+2025/04/25 18:24:07 Copying disk 0, Completed: 92%
+2025/04/25 18:24:08 Copying disk 0, Completed: 92%
+2025/04/25 18:24:08 Copying disk 0, Completed: 92%
+2025/04/25 18:24:09 Copying disk 0, Completed: 92%
+2025/04/25 18:24:09 Copying disk 0, Completed: 92%
+2025/04/25 18:24:10 Copying disk 0, Completed: 92%
+2025/04/25 18:24:10 Copying disk 0, Completed: 92%
+2025/04/25 18:24:11 Copying disk 0, Completed: 93%
+2025/04/25 18:24:11 Copying disk 0, Completed: 93%
+2025/04/25 18:24:12 Copying disk 0, Completed: 93%
+2025/04/25 18:24:12 Copying disk 0, Completed: 93%
+2025/04/25 18:24:13 Copying disk 0, Completed: 93%
+2025/04/25 18:24:13 Copying disk 0, Completed: 93%
+2025/04/25 18:24:14 Copying disk 0, Completed: 93%
+2025/04/25 18:24:14 Copying disk 0, Completed: 93%
+2025/04/25 18:24:15 Copying disk 0, Completed: 94%
+2025/04/25 18:24:15 Copying disk 0, Completed: 94%
+2025/04/25 18:24:16 Copying disk 0, Completed: 94%
+2025/04/25 18:24:16 Copying disk 0, Completed: 94%
+2025/04/25 18:24:17 Copying disk 0, Completed: 94%
+2025/04/25 18:24:17 Copying disk 0, Completed: 94%
+2025/04/25 18:24:18 Copying disk 0, Completed: 94%
+2025/04/25 18:24:18 Copying disk 0, Completed: 94%
+2025/04/25 18:24:19 Copying disk 0, Completed: 95%
+2025/04/25 18:24:19 Copying disk 0, Completed: 95%
+2025/04/25 18:24:20 Copying disk 0, Completed: 95%
+2025/04/25 18:24:21 Copying disk 0, Completed: 95%
+2025/04/25 18:24:21 Copying disk 0, Completed: 95%
+2025/04/25 18:24:22 Copying disk 0, Completed: 95%
+2025/04/25 18:24:22 Copying disk 0, Completed: 95%
+2025/04/25 18:24:23 Copying disk 0, Completed: 95%
+2025/04/25 18:24:23 Copying disk 0, Completed: 96%
+2025/04/25 18:24:24 Copying disk 0, Completed: 96%
+2025/04/25 18:24:24 Copying disk 0, Completed: 96%
+2025/04/25 18:24:25 Copying disk 0, Completed: 96%
+2025/04/25 18:24:25 Copying disk 0, Completed: 96%
+2025/04/25 18:24:26 Copying disk 0, Completed: 96%
+2025/04/25 18:24:26 Copying disk 0, Completed: 96%
+2025/04/25 18:24:27 Copying disk 0, Completed: 96%
+2025/04/25 18:24:27 Copying disk 0, Completed: 97%
+2025/04/25 18:24:28 Copying disk 0, Completed: 97%
+2025/04/25 18:24:28 Copying disk 0, Completed: 97%
+2025/04/25 18:24:29 Copying disk 0, Completed: 97%
+2025/04/25 18:24:29 Copying disk 0, Completed: 97%
+2025/04/25 18:24:30 Copying disk 0, Completed: 97%
+2025/04/25 18:24:30 Copying disk 0, Completed: 97%
+2025/04/25 18:24:31 Copying disk 0, Completed: 97%
+2025/04/25 18:24:31 Copying disk 0, Completed: 98%
+2025/04/25 18:24:32 Copying disk 0, Completed: 98%
+2025/04/25 18:24:32 Copying disk 0, Completed: 98%
+2025/04/25 18:24:33 Copying disk 0, Completed: 98%
+2025/04/25 18:24:33 Copying disk 0, Completed: 98%
+2025/04/25 18:24:34 Copying disk 0, Completed: 98%
+2025/04/25 18:24:34 Copying disk 0, Completed: 98%
+2025/04/25 18:24:35 Copying disk 0, Completed: 98%
+2025/04/25 18:24:35 Copying disk 0, Completed: 99%
+2025/04/25 18:24:36 Copying disk 0, Completed: 99%
+2025/04/25 18:24:36 Copying disk 0, Completed: 99%
+2025/04/25 18:24:37 Copying disk 0, Completed: 99%
+2025/04/25 18:24:37 Copying disk 0, Completed: 99%
+2025/04/25 18:24:38 Copying disk 0, Completed: 99%
+2025/04/25 18:24:38 Copying disk 0, Completed: 99%
+2025/04/25 18:24:39 Copying disk 0, Completed: 99%
+2025/04/25 18:24:39 Copying disk 0, Completed: 100%
+2025/04/25 18:24:39 Disk 0 copied successfully: /dev/vdd
+2025/04/25 18:24:40 Disk 0: Blocks have Changed.
+2025/04/25 18:24:40 Restarting NBD server
+2025/04/25 18:24:40 Executing nbdkit --exit-with-parent --readonly --foreground --unix=/tmp/nbdkit-3162759562/nbdkit.sock --pidfile=/tmp/nbdkit-3162759562/nbdkit.pid --verbose -D vddk.datapath=0 -D nbdkit.backend.datapath=0 vddk libdir=/home/fedora/vmware-vix-disklib-distrib server=wv-qa-vc.wv.mentorg.com user=ad001\z0053zhf password=[REDACTED] thumbprint=c6:d4:67:f5:6c:74:c8:66:63:66:94:03:cc:e9:58:65:3b:d5:47:f5 compression=fastlz config=/home/fedora/vddk.conf transports=file:nbdssl:nbd vm=moref=vm-41161 snapshot=snapshot-41190 [wv-qa-tin-01] pf9-test-22/pf9-test-22.vmdk 
+2025/04/25 18:24:42 Copying changed blocks
+2025/04/25 18:24:45 Progress: 3.23%
+2025/04/25 18:24:45 Progress: 6.45%
+2025/04/25 18:24:45 Progress: 9.68%
+2025/04/25 18:24:45 Progress: 12.90%
+2025/04/25 18:24:45 Progress: 22.58%
+2025/04/25 18:24:45 Progress: 25.81%
+2025/04/25 18:24:45 Progress: 29.03%
+2025/04/25 18:24:45 Progress: 35.48%
+2025/04/25 18:24:46 Progress: 70.97%
+2025/04/25 18:24:46 Progress: 77.42%
+2025/04/25 18:24:47 Progress: 80.65%
+2025/04/25 18:24:47 Progress: 83.87%
+2025/04/25 18:24:47 Progress: 87.10%
+2025/04/25 18:24:48 Progress: 90.32%
+2025/04/25 18:24:48 Progress: 96.77%
+2025/04/25 18:24:49 Progress: 100.00%
+2025/04/25 18:24:49 Finished copying changed blocks
+2025/04/25 18:24:50 Disk 0: Blocks have Changed.
+2025/04/25 18:24:50 Restarting NBD server
+2025/04/25 18:24:50 Executing nbdkit --exit-with-parent --readonly --foreground --unix=/tmp/nbdkit-3255787121/nbdkit.sock --pidfile=/tmp/nbdkit-3255787121/nbdkit.pid --verbose -D vddk.datapath=0 -D nbdkit.backend.datapath=0 vddk libdir=/home/fedora/vmware-vix-disklib-distrib server=wv-qa-vc.wv.mentorg.com user=ad001\z0053zhf password=[REDACTED] thumbprint=c6:d4:67:f5:6c:74:c8:66:63:66:94:03:cc:e9:58:65:3b:d5:47:f5 compression=fastlz config=/home/fedora/vddk.conf transports=file:nbdssl:nbd vm=moref=vm-41161 snapshot=snapshot-41219 [wv-qa-tin-01] pf9-test-22/pf9-test-22.vmdk 
+2025/04/25 18:24:52 Copying changed blocks
+2025/04/25 18:24:55 Progress: 100.00%
+2025/04/25 18:24:55 Finished copying changed blocks
+2025/04/25 18:24:56 Disk 0: No changed blocks found. Skipping copy
+2025/04/25 18:24:56 Shutting down source VM and performing final copy
+2025/04/25 18:24:56 Waiting for Cutover conditions to be met
+2025/04/25 18:24:56 Label: yes
+2025/04/25 18:24:56 Cutover conditions met
+2025/04/25 18:24:56 Disk 0: No changed blocks found. Skipping copy
+2025/04/25 18:25:02 Volume Hard disk 1 detached from VM
+2025/04/25 18:25:03 Stopping NBD server
+2025/04/25 18:25:03 Deleting migration snapshot
+2025/04/25 18:25:04 Converting disk
+2025/04/25 18:25:04 Attaching volumes to VM
+2025/04/25 18:25:04 Waiting for volume attachment
+2025/04/25 18:25:09 XML file created successfully: libxml.xml
+2025/04/25 18:25:09 Executing /usr/bin/guestfish --ro -a /dev/vdc -i ls /boot
+2025/04/25 18:25:16 Output from 'ls /boot' - 'system.map-5.15.0-119-generic
+config-5.15.0-119-generic
+efi
+grub
+initrd.img
+initrd.img-5.15.0-119-generic
+initrd.img.old
+lost+found
+vmlinuz
+vmlinuz-5.15.0-119-generic
+vmlinuz.old'
+2025/04/25 18:25:16 Executing /usr/bin/guestfish --ro -a /dev/vdc -i cat /etc/os-release
+2025/04/25 18:25:21 Setting up boot volume as: Hard disk 1
+2025/04/25 18:25:21 Executing /usr/bin/virt-v2v-in-place --firstboot /home/fedora/scripts/user_firstboot.sh -i disk /dev/vdc
+[   0.0] Setting up the source: -i disk /dev/vdc
+[   1.1] Opening the source
+[  10.4] Inspecting the source
+[  12.5] Checking for sufficient free disk space in the guest
+[  12.5] Converting Ubuntu 22.04.5 LTS (ubuntu22.04) to run on KVM
+virt-v2v-in-place: warning: could not determine a way to update the configuration of Grub2
+virt-v2v-in-place: The QEMU Guest Agent will be installed for this guest at first boot.
+virt-v2v-in-place: This guest has virtio drivers installed.
+[  43.5] Setting a random seed
+[  43.5] Installing firstboot script: /home/fedora/scripts/user_firstboot.sh
+[  43.6] SELinux relabelling
+[  43.8] Mapping filesystem data to avoid copying unused and blank areas
+[  54.8] Closing the overlay
+[  55.0] Assigning disks to buses
+[  55.0] Checking if the guest needs BIOS or UEFI to boot
+virt-v2v-in-place: This guest requires UEFI on the target to boot.
+[  55.0] Finishing off
+2025/04/25 18:26:16 Adding wildcard netplan
+2025/04/25 18:26:16 Created local netplan file
+2025/04/25 18:26:16 Uploading netplan file to disk
+2025/04/25 18:26:16 Executing /usr/bin/guestfish --rw -a /dev/vdc -i upload /home/fedora/99-wildcard.network /etc/systemd/network/99-wildcard.network
+2025/04/25 18:26:20 Wildcard netplan added successfully
+2025/04/25 18:26:26 Volume Hard disk 1 detached from VM
+2025/04/25 18:26:27 Successfully converted disk
+2025/04/25 18:26:27 Creating target instance
+2025/04/25 18:26:27 Current requirements: 40 CPUs and 81920 MB of RAM
+2025/04/25 18:26:27 No suitable flavor found.
+2025/04/25 18:26:27 Closest OpenStack flavor: : CPU: 9999999vCPUs	Memory: 9999999MB
+2025/04/25 18:26:27 Port with MAC address 00:50:56:a3:56:70 does not exist, creating new port
+2025/04/25 18:26:27 Trying with same IP address:  10.102.164.23
+2025/04/25 18:26:27 Could Not Use IP: 10.102.164.23, using DHCP to create Port
+2025/04/25 18:26:28 Port created with ID:  debe9ea2-4d32-48b1-80cf-deeddb3541f2
+2025/04/25 18:26:28 Port created successfully: MAC:00:50:56:a3:56:70 IP:10.102.164.167
+2025/04/25 18:26:28 failed to create target instance: failed to create VM: failed to create server: Bad request with: [POST https://disw-qa-wilsonville.app.pcd.platform9.com/nova/v2.1/81995cd0f22a4f5689114c49a440d391/servers], error message: {"badRequest": {"code": 400, "message": "Invalid input for field/attribute flavorRef. Value: . '' is too short"}}. Trying to perform cleanup
+2025/04/25 18:27:29 Volume Hard disk 1 detached from VM
+2025/04/25 18:27:30 Volume Hard disk 1 deleted
+2025/04/25 18:27:30 Failed to delete snapshot of source VM: failed to delete snapshot: no snapshots for this VM

@@ -15,11 +15,22 @@
         src: /home/ubuntu/VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz  # Path to the tarball (can be local or remote)
         dest: /home/ubuntu/  # The directory where the contents will be extracted
         remote_src: yes
-
-
     # Task 2: Install jq on the remote host
     - name: Install jq
       apt:
         name: jq
         state: present
         update_cache: yes
+    - name: Setup logging
+      ansible.builtin.copy:
+        src: /home/pf9admin/gurri/vjb_api/pf9_vjb_setup/launch_vjb/library/log_collection
+        dest: /home/ubuntu
+        mode: '0644'
+
+    - name: Set owner and group for /path/to/your/folder
+      ansible.builtin.file:
+        path: /home/pf9admin/gurri/vjb_api/pf9_vjb_setup/launch_vjb/library/log_collection
+        owner: ubuntu
+        group: ubuntu
+        recurse: yes  # This ensures ownership is applied to all contents
+        state: directory # Explicitly state that it's a directory

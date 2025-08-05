@@ -246,7 +246,7 @@ var_flavor_id=$(openstack flavor list -f json | jq '.[] | select (.Name | contai
 var_key_name="vjb-ansible"
 
 #Get the network ID
-var_network_id="2b7af7e8-dd0c-46a4-9da6-5f7f7d9756c2"
+var_network_id="bcc94244-0957-419a-b6cf-cd5db77849eb"
 
 #Get the image id for vjailbreak image as per version
 var_vjb_image=$(openstack image list -f json | jq --arg name "$1" '.[] | select(.Name == $name) | .ID' | tr -d '"')

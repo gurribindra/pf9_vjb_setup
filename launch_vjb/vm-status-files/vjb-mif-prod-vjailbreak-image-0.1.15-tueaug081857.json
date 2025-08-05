@@ -1,0 +1,36 @@
+{
+  "OS-DCF:diskConfig": "MANUAL",
+  "OS-EXT-AZ:availability_zone": "",
+  "OS-EXT-SRV-ATTR:host": null,
+  "OS-EXT-SRV-ATTR:hypervisor_hostname": null,
+  "OS-EXT-SRV-ATTR:instance_name": "",
+  "OS-EXT-STS:power_state": 0,
+  "OS-EXT-STS:task_state": "scheduling",
+  "OS-EXT-STS:vm_state": "building",
+  "OS-SRV-USG:launched_at": null,
+  "OS-SRV-USG:terminated_at": null,
+  "accessIPv4": "",
+  "accessIPv6": "",
+  "addresses": {},
+  "adminPass": "pZkS5FrQUrdr",
+  "config_drive": "",
+  "created": "2025-08-05T18:58:21Z",
+  "flavor": "vjb-optimal-flavor (43affbed-27ea-4c8a-8d22-2896e32c3773)",
+  "hostId": "",
+  "id": "b4d93761-cfb2-4eb1-b1a9-7e16b9879142",
+  "image": "vjailbreak-image-0.1.15 (2af04cd8-5393-4b63-8ff5-f1c4be16641c)",
+  "key_name": "vjb-ansible",
+  "name": "vjb-mif-prod-vjailbreak-image-0.1.15-tueaug081857",
+  "os-extended-volumes:volumes_attached": [],
+  "progress": 0,
+  "project_id": "fe310c6881944439a6a622177fcdd883",
+  "properties": {},
+  "security_groups": [
+    {
+      "name": "default"
+    }
+  ],
+  "status": "BUILD",
+  "updated": "2025-08-05T18:58:20Z",
+  "user_id": "48a93046a7ca45609d01470f4f1f2ced"
+}
